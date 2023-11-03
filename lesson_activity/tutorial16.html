@@ -1,0 +1,70 @@
+<html><head>
+<title>Table</title>
+<link rel=icon href=paris.jpg type.image/jpg>
+<meta name=viewport content=width=devie-width,initial-scale=1.0>
+<style>
+    .popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 20px;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+</style>
+
+</head>
+
+<body topmargin=100 leftmargin=100>
+
+<table border=5 bordercolor=tomato>
+<caption>My First Web Table<br><br></caption>
+<tr>
+<th>header one</th>
+<th>header two</th>
+<th>header three</th>
+<th>header four</th>
+</tr>
+
+<tr>
+<td onclick="first(x)">data row1-col1</td>
+<td onmouseover="second"(x)">data row1-col2</td>
+<td ondbclick="third(x)">data row1-col3</td>
+<td onclick="normalImg"(x)">data row1-col4</td>
+</tr>
+
+<tr>
+<td>data row2-col2</td>
+<td>data row2-col2</td>
+<td>data row2-col3</td>
+<td>data row2-col4</td>
+</tr>
+
+
+<div class="popup" id="popup">
+    <p>data row1-col1</p>
+    <button onclick="closePopup()"</button>
+</div>
+
+<div class="popup" id="popup">
+    <p>data row1-col2</p>
+    <button onclick="closePopup()"</button>
+</div>
+
+<div class="popup" id="popup">
+    <p>data row1-col3</p>
+    <button onclick="closePopup()"</button>
+</div>
+
+<div class="popup" id="popup">
+    <p>data row1-col4</p>
+    <button onclick="closePopup()"</button>
+</div>
+
+</table>
+
+<body>
+<html>
