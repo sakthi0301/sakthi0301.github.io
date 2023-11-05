@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>workers list</title>
+</head>
+<body>
+
+ <style>
+    body{
+      margin-top: 50px;
+      margin-left: 30%;
+    }
+    table{
+      background-color: palevioletred;
+      text-align: center;
+      padding:40px;
+    }
+    table caption{
+      font-size: 40px;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    table thead tr th{
+      font-size: 20px;
+      color:paleturquoise;
+
+    }
+  </style>
+</head>
+<body>
+    <caption>SAH technologent<align text=center<br><br>workers of 2023 september <align text=center><br><br></caption>
+
+<script>
+    // Sample data
+    const data = [
+        { country_name: 'USA', workers_id: 1, age: 30, department: 'IT' },
+        { country_name: 'Canada', workers_id: 2, age: 35, department: 'Finance' },
+        { country_name: 'UK', workers_id: 3, age: 28, department: 'Marketing' },
+        { country_name: 'Germany', workers_id: 4, age: 32, department: 'HR' },
+        { country_name: 'France', workers_id: 5, age: 31, department: 'Operations' },
+        { country_name: 'Australia', workers_id: 6, age: 29, department: 'Sales' },
+        { country_name: 'Japan', workers_id: 7, age: 33, department: 'R&D' },
+        { country_name: 'India', workers_id: 8, age: 27, department: 'Customer Support' },
+        { country_name: 'Brazil', workers_id: 9, age: 34, department: 'Legal' },
+        { country_name: 'Mexico', workers_id: 10, age: 26, department: 'Production' },
+    ];
+
+    // Create a table element
+    const table = document.createElement('table');
+
+    // Create table header
+    const headerRow = table.insertRow();
+    for (const key in data[0]) {
+        if (data[0].hasOwnProperty(key)) {
+            const headerCell = document.createElement('th');
+            headerCell.textContent = key;
+            headerRow.appendChild(headerCell);
+        }
+    }
+
+    // Populate table with data
+    for (const record of data) {
+        const row = table.insertRow();
+        for (const key in record) {
+            if (record.hasOwnProperty(key)) {
+                const cell = row.insertCell();
+                cell.textContent = record[key];
+            }
+        }
+    }
+
+    // Add the table to the body of the document
+    document.body.appendChild(table);
+</script>
+
+</body>
+</html>
