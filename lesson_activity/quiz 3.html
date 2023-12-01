@@ -1,0 +1,72 @@
+<html><head><title>form - text input</title>
+<link rel=icon href=paris.jpg type=image/jpg>
+<body topmargin=50>
+<center>
+<form>
+<p style=background-color:powderblue;
+color:#696969; font-family:verdana;
+font-size:160%
+text-align:center;
+width:60%;height:40%;">
+<br>
+Personal Details:
+<br><br>
+First name:<input type=text name=fname>
+<br>
+Last name:<input type=text name=lname>
+<br>
+Gender:
+<input type = radio name = gender value = MALE>male 
+<input type = radio name = gender value = FEMALE>female 
+<br>
+Choose your favourite subjects:<br>
+<input type=checkbox name=fav_sub value=DCS4103>DCS4103<br>
+<input type=checkbox name=fav_sub value=DCS3003>DCS3003<br>
+<input type=checkbox name=fav_sub value=MST1003>MST1003<br>
+<input type=checkbox name=fav_sub value=MST2003<br>
+<br>
+<br>
+Date of birth:
+<input type=date name=dob>
+<br>
+Login password:
+<input type=password name=loginpass>
+<br>
+Course:
+<select>
+<option value="0">-list of courses-</option>
+<option value="DCS">Diploma In computer science</option>
+<option value="DIB">DIPLOMA IN BUSINESS</option>
+<option value="DAS">Diploma in Airline Services</option>
+</select>
+<br>
+        <td rowspan="2" class="p3">1) Have you grasped the content of the website Design so far? </td>
+                        <td><input name="question1" type="radio" value="Yes1">Yes<br>
+                            <input name="question1" type="radio" value="No1">No<br><br><br><br></td></tr>
+
+        <br>
+   </td></tr>
+                    <tr>
+                        <td rowspan="2" class="p3">2) Can You now create a simple but interaction?</td>
+                        <td><input name="question2" type="radio" value="Yes1">Yes<br>
+                            <input name="question2" type="radio" value="No1">No<br><br><br><br></td></tr>
+                        </td></tr>
+                    <tr>
+</tr>
+ <td class="p3">3) What have you learned so far?</td>
+                        <td>
+                        <input name="question3" type="checkbox" value="Knowledge">Knowledge<br>
+                        <input name="question3" type="checkbox" value="Pratical Skills">Pratical Skills<br>
+                        <input name="question3" type="checkbox" value="Problem Solving">Problem Solving<br>
+                        <input name="question3" type="checkbox" value="Self-Exploration Skills">Self exploration skilss<br>
+                        </td>
+                    </tr>
+   <tr>
+                        <td colspan="2">Wish items/ Suggestion<font color="red">*</font><br>
+                            <textarea rows=5 cols=100 name=address></textarea></td>
+      
+<br><br>
+<input type=submit value=Submit>
+<input type=reset value=Reset>
+</form></center>
+</body></html>
